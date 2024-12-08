@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Author: Prasad Vidhyabaskaran
 
-from xml import etree as ET
+from lxml import etree as ET
 from collections import OrderedDict, Counter
 from xmldiff import main, formatting
 import argparse
