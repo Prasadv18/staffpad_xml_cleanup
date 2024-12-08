@@ -264,7 +264,7 @@ class XMLUtility:
 
 def main():
     parser = argparse.ArgumentParser(description='Takes a music xml file from Staffpad. Renames part and instrument names in a generic way to help with import into other programs like Dorico')
-    parser.add_argument('--input_file', help='input xml file')
+    parser.add_argument('--input_file', help='input xml file',required=True)
     args = parser.parse_args()
 
     output_file=args.input_file[:-4]+"_xml_cleanup.xml" #modified.xml"
